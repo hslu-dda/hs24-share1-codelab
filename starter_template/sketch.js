@@ -33,7 +33,7 @@ function draw() {
   background(200, 100, 200);
   textAlign(CENTER);
   textSize(20);
-  text("Happy New Year DDA23!", width / 2, height / 2);
+  text("Happy New Year DDA24!", width / 2, height / 2);
   console.log("Data in draw", data);
 }
 
