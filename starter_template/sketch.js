@@ -3,7 +3,7 @@ let cnv;
 
 // SUCHE: Einige Beispiele für API Queries in Form einer URL
 let search_by_term = 'https://api.vam.ac.uk/v2/objects/search?q="luzern"';
-let search_by_objectname = 'https://api.vam.ac.uk/v2/objects/search?q_object_name="book"';
+let search_by_objectname = 'https://api.vam.ac.uk/v2/objects/search?q_object_name="book title"';
 let search_by_objecttype = 'https://api.vam.ac.uk/v2/objects/search?q_object_type="book"';
 let search_by_place = "https://api.vam.ac.uk/v2/objects/search?q_place_name=London";
 
