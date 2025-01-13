@@ -17,14 +17,15 @@ let filter_by_style = "https://api.vam.ac.uk/v2/objects/search?id_style=x37881";
 // DATEN und BEGRIFFE
 // Suche nach 'Feminism' zwischen 1960-1970
 let search_by_term_and_year = "https://api.vam.ac.uk/v2/objects/search?q=feminism&year_made_from=1960&year_made_to=1970";
+let test = "https://api.vam.ac.uk/v2/objects/search?page=1&page_size=15&q=&year_made_from=1900&year_made_to=2000"
 
 function setup() {
-  cnv = createCanvas(400, 400);
+  createCanvas(400, 400);
   noLoop();
 
-  d3.json(search_by_term_and_year).then((response) => {
+  d3.json(test).then((response) => {
     data = response;
-    console.log("Reponse", data, data["records"][0]._primaryDate);
+    console.log("Reponse", data);
 	redraw();
   });
 }
